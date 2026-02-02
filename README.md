@@ -9,9 +9,10 @@ So i decided that i should make something, with help of Claude AI, i made this O
 So far i have two plugins.
 
 ##### Watch
-Sends Hours, Minutes and Seconds, sending adresses can be configured.
+<pre>Sends Hours, Minutes and Seconds, sending adresses can be configured.
+</pre>
 
 ##### Boop Counter
-<pre>Listens for boolean value at certain adress (Can be configured)  
-      and sends into chatbox current and total boops count, every two sec when booped, to prevent spaming the chat.
+<pre>Listens for boolean value at certain adress (Can be configured) and sends into chatbox current and total boops count, 
+every two sec when booped, to prevent spaming the chat.
 </pre>
