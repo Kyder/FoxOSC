@@ -9,7 +9,7 @@ So i decided that i should make something, with help of Claude AI, i made this O
 So far i have two plugins.
 
 ##### Watch
-<pre>Sends Hours, Minutes and Seconds, sending adresses can be configured.
+<pre>Sends Hours, Minutes and Seconds from you real time, sending adresses can be configured.
 </pre>
 
 ##### Boop Counter
