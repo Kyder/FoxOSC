@@ -13,6 +13,6 @@ So far i have two plugins.
 </pre>
 
 ##### Boop Counter
-<pre>Listens for boolean value at certain adress (Can be configured) and sends into chatbox current and total boops count, 
-every two sec when booped, to prevent spaming the chat.
+<pre>Listens for boolean value at certain adress (Can be configured) and sends into chatbox 
+current and total boops count, every two sec when booped, to prevent spaming the chatbox.
 </pre>
