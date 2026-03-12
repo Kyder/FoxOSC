@@ -16,3 +16,8 @@ So far i have two plugins.
 <pre>Listens for boolean value at certain adress (Can be configured) and sends into chatbox 
 current and total boops count, every two sec when booped, to prevent spaming the chatbox.
 </pre>
+
+
+AI warning:
+This was made with big help of AI, so it can contain some bugs. For my usecase it works. So if it doesnt work for you, you can fork this and modify it how you want.
+I made this because i did not found on the internet what i wanted. Modular osc sender/receiver. AI can make mistakes and tries to hide old code under new code. So it takes a lot of effort into "sweet talk" to make clean code  and also functional.
