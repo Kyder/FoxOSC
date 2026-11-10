@@ -9,13 +9,16 @@ So i decided that i should make something, with help of Claude AI, i made this O
 So far i have two plugins.
 
 ##### Watch
+Made for this Asset > [Realtime OSC Watch, the "No Watch" for VRChat 3.0 avatars VRCFury by Fuuujin](https://fuuujin.gumroad.com/l/NoWatch)
 <pre>Sends Hours, Minutes and Seconds from you real time, sending adresses can be configured.
 </pre>
 
 ##### Boop Counter
+ Made for this Asset > [VRChat Boop Counter (Universal) by Value](https://valuef.gumroad.com/l/boops)
 <pre>Listens for boolean value at certain adress (Can be configured) and sends into chatbox 
 current and total boops count, every two sec when booped, to prevent spaming the chatbox.
 </pre>
+
 
 
 AI warning:
