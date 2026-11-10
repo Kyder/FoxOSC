@@ -1,0 +1,66 @@
+[package]
+name = "fox-osc"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+# OSC communication
+rosc = "0.10"
+
+# GUI framework (immediate mode, pure Rust, no system GUI libs needed)
+eframe = { version = "0.37", default-features = false, features = [
+    "default_fonts",
+    "glow",
+    "wayland",
+    "x11",
+] }
+# Same egui eframe uses; only here to turn on the emoji/icon fonts (🦊 ⚙ ☰ …)
+egui = { version = "0.37", features = ["monochrome_emoji_fonts"] }
+
+# WebAssembly runtime
+wasmtime = "27.0"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+
+# Time handling
+chrono = "0.4"
+
+# Error handling
+anyhow = "1.0"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Threading
+parking_lot = "0.12"
+
+# Directories
+dirs = "5.0"
+
+[lib]
+name = "osc_app_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fox-osc"
+path = "src/main.rs"
+
+# Workspace for plugin development
+[workspace]
+members = ["plugins/*"]
+
+# Profile for WASM plugins. Inside a workspace, cargo ignores [profile]
+# sections in member crates, so plugin build settings must live here.
+# Build with:  cargo build --profile plugin --target wasm32-unknown-unknown -p <plugin>
+# Output:      target/wasm32-unknown-unknown/plugin/<plugin_name>.wasm
+[profile.plugin]
+inherits = "release"
+opt-level = "z"     # optimise for size
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

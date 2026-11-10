@@ -1,0 +1,10 @@
+[package]
+name = "watch-plugin"
+version = "0.2.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+# Build settings live in the workspace root Cargo.toml under [profile.plugin]
+# (cargo ignores profiles in workspace members).
