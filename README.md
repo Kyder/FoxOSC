@@ -4,7 +4,7 @@
 
 This was made because VRCOSC supports only windows and also i do not like that i cannot just place different plugins into specific place and it will just works. Many times i got notification about "Some modules are out of date" and error was not on my side.
 
-So i decided that i should make something, with help of Claude AI, i made this OSC app which runs on Rust, uses GTK4 for UI and for plugins uses WebAssembly.
+So i decided that i should make something, with help of Claude AI, i made this OSC app which runs on Rust, uses egui (eframe) for UI and for plugins uses WebAssembly.
 
 So far i have two plugins.
 
